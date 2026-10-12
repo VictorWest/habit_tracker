@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException, Depends
 from database import db
-from schemas import UserLogin, UserSignup, Token
+from schemas import UserLogin, UserSignup
 from utils.security import create_access_token, get_current_user, hash_password, verify_password
 
 router = APIRouter()
